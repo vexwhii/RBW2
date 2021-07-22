@@ -1009,11 +1009,11 @@ local player;
     for i,v in pairs(game.Players:GetChildren()) do
         Players[i] = v.Name
     end
-       spawn(function()
+       
     b2:Dropdown("Choose Player",Players,true,function(mob)
         player = mob
     end)
-    end)
+    
 
     b2:Button("Glitch Player",function()
         local name = player
