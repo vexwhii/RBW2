@@ -912,13 +912,13 @@ stats:Label("Time spent with gui",{
 spawn(function() 
   stats:Label("Minutes",{
     TextSize = 25; -- Self Explaining
-    TextColor = Color3.fromRGB(255, 189, 255); -- Self Explaining
+    TextColor = Color3.fromRGB(99, 99, 175); -- Self Explaining
     BgColor = Color3.fromRGB(38, 38, 38); -- Self Explaining
     
 })
 local xddd = stats:Label("0",{
     TextSize = 25; -- Self Explaining
-    TextColor = Color3.fromRGB(255, 189, 255); -- Self Explaining
+    TextColor = Color3.fromRGB(99, 99, 175); -- Self Explaining
     BgColor = Color3.fromRGB(38, 38, 38); -- Self Explaining
     
 })
@@ -932,13 +932,13 @@ end)
 spawn(function()
 stats:Label("Seconds",{
     TextSize = 25; -- Self Explaining
-    TextColor = Color3.fromRGB(255, 189, 255); -- Self Explaining
+    TextColor = Color3.fromRGB(99, 99, 175); -- Self Explaining
     BgColor = Color3.fromRGB(38, 38, 38); -- Self Explaining
     
 })
 local xdd = stats:Label("1",{
     TextSize = 25; -- Self Explaining
-    TextColor = Color3.fromRGB(255, 189, 255); -- Self Explaining
+    TextColor = Color3.fromRGB(99, 99, 175); -- Self Explaining
     BgColor = Color3.fromRGB(38, 38, 38); -- Self Explaining
     
 })
