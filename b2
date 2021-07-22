@@ -1,7 +1,7 @@
 _G.ButtonColor = Color3.fromRGB(0, 255, 255)
 _G.ToggleColor = Color3.fromRGB(89, 166, 255)
 _G.ArrowColor = Color3.fromRGB(89, 166, 255)
-_G.MainTextColor = Color3.fromRGB(255, 189, 255)
+_G.MainTextColor = Color3.fromRGB(99, 99, 175)
 
 
 
