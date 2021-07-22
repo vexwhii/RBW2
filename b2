@@ -1,7 +1,7 @@
 _G.ButtonColor = Color3.fromRGB(0, 255, 255)
 _G.ToggleColor = Color3.fromRGB(89, 166, 255)
 _G.ArrowColor = Color3.fromRGB(89, 166, 255)
-_G.MainTextColor = Color3.fromRGB(99, 99, 175)
+_G.MainTextColor = Color3.fromRGB(255, 189, 255)
 
 
 
@@ -460,12 +460,13 @@ end)
 
 
 spawn (function()
-for i = 1,math.huge, 1 do
-for index,v in pairs(game.CoreGui:GetDescendants()) do
+while wait() do
+for i,v in pairs(game.CoreGui:GetDescendants()) do
 if v.Name == "Inside" then
     
 
 v.Visible = false
+wait(1)
 v.Visble = true
 
 
@@ -1009,12 +1010,12 @@ local player;
     for i,v in pairs(game.Players:GetChildren()) do
         Players[i] = v.Name
     end
-       
+   
     b2:Dropdown("Choose Player",Players,true,function(mob)
         player = mob
     end)
     
-
+    
     b2:Button("Glitch Player",function()
         local name = player
             local args = {
