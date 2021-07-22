@@ -459,23 +459,6 @@ end
 end)
 
 
-spawn (function()
-while wait() do
-for i,v in pairs(game.CoreGui:GetDescendants()) do
-if v.Name == "Inside" then
-    
-
-v.Visible = false
-wait(1)
-v.Visble = true
-
-
-
-
-end
-end
-end
-end)
 
 rim:ColorPicker("Rim",Color3.fromRGB(99, 99, 175),function(color) --Default color
 if game.PlaceId == 593223204  then     
