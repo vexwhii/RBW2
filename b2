@@ -433,16 +433,14 @@ nuts:Button("ForceField",function()
         end
     end
 end)
-local kelp
-nuts:Toggle("Fire",function(gg)
-    kelp = gg
-if gg ==  true then
 
+nuts:Toggle("Fire",function(bool)
+    if bool then
 local hi = Instance.new("Fire", game.Players.LocalPlayer.Character.UpperTorso)
 
 else
 
-game.Players.LocalPlayer.Character.Head.Fire:Destroy()
+game.Players.LocalPlayer.Character.UpperTorso.Fire:Destroy()
 end
 end)
 
@@ -453,7 +451,7 @@ local hi = Instance.new("Sparkles", game.Players.LocalPlayer.Character.UpperTors
 
 else
 
-game.Players.LocalPlayer.Character.Head.Sparkles:Destroy()
+game.Players.LocalPlayer.Character.UpperTorso.Sparkles:Destroy()
 
 end
 end)
@@ -679,17 +677,14 @@ Face:Box("Face","number",function(value)
 hoip = value
 
 if value == tonumber("1") then
-while wait() do
+
 joip.Character.Head.face.Texture = "rbxassetid://943806932"
-if value == tonumber("2")then
-    break
-end
-end
+
 end
 if value == tonumber("2") then
-    while wait() do
+
 joip.Character.Head.face.Texture = "rbxassetid://6373201096"
-end
+
 end
 if value == tonumber("3") then
 joip.Character.Head.face.Texture = "rbxassetid://265790768"
