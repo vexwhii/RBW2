@@ -1,6 +1,6 @@
 local function callback(Text)
  if Text == "ok" then
-loadstring(game:HttpGet("https://hastebin.com/raw/ubixajasiw"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/vexwhii/RBW2/main/b2"))()
 end
 end
 local NotificationBindable = Instance.new("BindableFunction")
