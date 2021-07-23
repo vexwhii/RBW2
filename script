@@ -11,6 +11,17 @@ game.StarterGui:SetCore("SendNotification",  {
  Text = "";
  Icon = "rbxassetid://54460408";
  Duration = 100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
- Button1 = "ok";
+ Button1 = "Ok";
  Callback = NotificationBindable;
 })
+
+
+spawn (function()
+while true do
+	for i = 0,1,0.001*1 do
+        game:GetService("CoreGui").RobloxGui.NotificationFrame.Notification.Button1.TextColor3 = Color3.fromHSV(i,1,1)
+		game:GetService("CoreGui").RobloxGui.NotificationFrame.Notification.NotificationTitle.TextColor3 = Color3.fromHSV(i,1,1) --creates a color using i
+		wait()
+	end
+end
+end)
