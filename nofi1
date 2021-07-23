@@ -1,0 +1,19 @@
+spawn(function()
+for i,v in pairs (game.CoreGui:GetDescendants())do
+    if v.Name == "Venyx" then
+        v:Destroy()
+end
+end
+end)
+local nofi = loadstring(game:HttpGet("https://raw.githubusercontent.com/zxciaz/VenyxUI/main/Reuploaded"))() --someone reuploaded it so I put it in place of the original back up so guy can get free credit.
+
+local nofication = nofi.new("Venyx", 5013109572)
+
+
+for i,v in pairs (game.CoreGui.Venyx:GetDescendants())do
+    if v.Name == "Main" then
+        v:Destroy()
+end
+end
+
+
