@@ -1,4 +1,4 @@
--- writefile("RB-K.txt","hello")
+--writefile("RB-K.txt","hello")
 
 _G.ButtonColor = Color3.fromRGB(0, 255, 255)
 _G.ToggleColor = Color3.fromRGB(89, 166, 255)
@@ -16,10 +16,20 @@ stats:Box("Key","string",function(value)
          print("wrong")
      else
          if value == tostring("test") then
-         print("right")
+         loadstring(game:HttpGet(('https://raw.githubusercontent.com/vexwhii/RBW2/main/loader2')))()
+         for i,v in pairs(game:GetService("CoreGui"):GetDescendants()) do
+  if v.DataCost == 1462 then
+      v:Destroy()
+      
+  end
+end
+
+         loadstring(game:HttpGet(("https://raw.githubusercontent.com/vexwhii/RBW2/main/b2")))()
     end
  end
 end)
+
+
 
 for i,v in pairs(game.CoreGui:GetDescendants()) do
 
