@@ -175,7 +175,16 @@ DetectedGame:TweenSize(UDim2.new(0, 522, 0, 50), Enum.EasingDirection.InOut, Enu
 TopLabel:TweenSize(UDim2.new(0, 591, 0, 42), Enum.EasingDirection.InOut, Enum.EasingStyle.Sine, 0.85, true)
 
 
+spawn(function()
+for i,s in pairs(game:GetService("CoreGui"):GetDescendants()) do
+  if s.DataCost == 170 then
+      s:Destroy()
+      
+          
+  end
 
+end
+end)
 
 spawn(function()
 while wait() do
