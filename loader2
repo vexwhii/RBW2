@@ -14,22 +14,7 @@ end
 
  end)   
 
-function ki()
-    while wait() do 
 
-    for i,v in pairs(game:GetService("CoreGui"):GetDescendants()) do
-  if v.DataCost == 1462 then
-      v:Destroy()
-      
-  end
-end
-end
-
-    end
-
-spawn(function()
-ki()
-end)
 
     
 
