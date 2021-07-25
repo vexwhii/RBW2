@@ -24,7 +24,7 @@ stats:Box("Key","string",function(value)
   end
 end
 
-         loadstring(game:HttpGet(("https://raw.githubusercontent.com/vexwhii/RBW2/main/b2")))()
+         loadstring(game:HttpGet(("https://raw.githubusercontent.com/vexwhii/RBW2/main/opener")))()
     end
  end
 end)
