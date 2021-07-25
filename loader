@@ -7,7 +7,7 @@ appendfile("hattoriv3.xzx","\nhejrjeirtetrtetetetllo\nuitrtirtjiertert")
 wait(2.8)
 for i,s in pairs(game:GetService("CoreGui")[""].Frame:GetDescendants()) do
   if s.Text == "  Hattori [Hub]" then
-      s.Text = "RB-K \nversion1.01"
+      s.Text = "RB-K \n version1.01"
   end
 
 end
@@ -15,7 +15,7 @@ end
  end)   
 
 function ki()
-while wait(0.0000000000000000001) do
+while true do wait(0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001) 
 
     for i,v in pairs(game:GetService("CoreGui"):GetDescendants()) do
   if v.DataCost == 1462 then
