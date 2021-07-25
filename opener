@@ -174,16 +174,16 @@ Executor:TweenSize(UDim2.new(0, 257, 0, 50), Enum.EasingDirection.InOut, Enum.Ea
 DetectedGame:TweenSize(UDim2.new(0, 522, 0, 50), Enum.EasingDirection.InOut, Enum.EasingStyle.Sine, 0.85, true)
 TopLabel:TweenSize(UDim2.new(0, 591, 0, 42), Enum.EasingDirection.InOut, Enum.EasingStyle.Sine, 0.85, true)
 
-
+spawn(function()
 while true do wait()
-for i,s in pairs(game:GetService("CoreGui"):GetDescendants()) do
-  if s.DataCost == 1462 then
-      s:Destroy()
+for i,v in pairs(game.CoreGui:GetDescendants()) do
+  if v.DataCost == 1462 then
+      v:Destroy()
   end
 
 end
 end
-
+end)
 
 
 spawn(function()
