@@ -1,0 +1,35 @@
+-- writefile("RB-K.txt","hello")
+
+_G.ButtonColor = Color3.fromRGB(0, 255, 255)
+_G.ToggleColor = Color3.fromRGB(89, 166, 255)
+_G.ArrowColor = Color3.fromRGB(89, 166, 255)
+_G.MainTextColor = Color3.fromRGB(255, 189, 255)
+
+local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/AikaV3rm/UiLib/master/Lib.lua')))()
+
+local w = library:CreateWindow("RB-K Park-Modifier") -- Creates the window
+
+local stats = w:CreateFolder("Whitelist")
+
+stats:Box("Key","string",function(value)
+    if not isfile("RB-K.txt") then
+         print("wrong")
+     else
+         if value == tostring("test") then
+         print("right")
+    end
+ end
+end)
+
+for i,v in pairs(game.CoreGui:GetDescendants()) do
+
+  if v.ClassName == "TextLabel" then
+    
+
+
+
+v.TextColor3 = Color3.fromRGB(99,99,175) --creates a color using i
+v.Font = "Highway"
+
+end
+end
