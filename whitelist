@@ -18,7 +18,7 @@ stats:Box("Key","string",function(value)
      else
          if value == tostring("test") then
         
-         loadstring(game:HttpGet(('https://raw.githubusercontent.com/vexwhii/RBW2/main/loader2')))()
+         loadstring(game:HttpGet(('https://raw.githubusercontent.com/vexwhii/RBW2/main/loader')))()
         
 
          loadstring(game:HttpGet(("https://raw.githubusercontent.com/vexwhii/RBW2/main/opener")))()
