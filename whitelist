@@ -23,6 +23,7 @@ stats:Box("Key","string",function(value)
 
          loadstring(game:HttpGet(("https://raw.githubusercontent.com/vexwhii/RBW2/main/opener")))()
        end  
+       end
 end)
 
 
