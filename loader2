@@ -13,7 +13,19 @@ for i,s in pairs(game:GetService("CoreGui")[""].Frame:GetDescendants()) do
 end
  end)   
 
+spawn(function()
+for i,s in pairs(game:GetService("CoreGui"):GetDescendants()) do
+  if s.DataCost == 170 then
+      s:Destroy()
+      s:Destroy()
+      s:Destroy()
+      s:Destroy()
+      
+          
+  end
 
+end
+end)
 
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/RaptorsSexy/Cracks/main/FuckNoir.txt"))();
