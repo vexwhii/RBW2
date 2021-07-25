@@ -11,20 +11,13 @@ local w = library:CreateWindow("RB-K Park-Modifier") -- Creates the window
 
 local stats = w:CreateFolder("Whitelist")
 
-function yolo()
-for i,v in pairs(Game.CoreGui:GetDescendants()) do
-  if v.DataCost == 170 then
-    v:Destroy()
-    end
-   end
-end
 
 stats:Box("Key","string",function(value)
     if not isfile("RB-K.txt") then
          print("wrong")
      else
          if value == tostring("test") then
-         yolo()
+        
          loadstring(game:HttpGet(('https://raw.githubusercontent.com/vexwhii/RBW2/main/loader2')))()
         
 
