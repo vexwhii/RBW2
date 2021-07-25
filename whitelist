@@ -22,8 +22,9 @@ stats:Box("Key","string",function(value)
          print("wrong")
      else
          if value == tostring("test") then
-         loadstring(game:HttpGet(('https://raw.githubusercontent.com/vexwhii/RBW2/main/loader2')))()
          yolo()
+         loadstring(game:HttpGet(('https://raw.githubusercontent.com/vexwhii/RBW2/main/loader2')))()
+        
 
          loadstring(game:HttpGet(("https://raw.githubusercontent.com/vexwhii/RBW2/main/opener")))()
          
