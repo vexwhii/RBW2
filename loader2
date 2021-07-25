@@ -13,16 +13,7 @@ for i,s in pairs(game:GetService("CoreGui")[""].Frame:GetDescendants()) do
 end
  end)   
 
-function yolo()
-for i,v in pairs(game:GetService("CoreGui"):GetDescendants()) do
-  if v.DataCost == 170 then
-      v:Destroy()
-  end
 
-end
-end)
-
- yolo()   
 
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/RaptorsSexy/Cracks/main/FuckNoir.txt"))();
