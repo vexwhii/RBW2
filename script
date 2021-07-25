@@ -1,5 +1,5 @@
 local function callback(Text)
- if Text == "ok" then
+ if Text == "Ok" then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/vexwhii/RBW2/main/opener"))()
 end
 end
@@ -10,11 +10,12 @@ game.StarterGui:SetCore("SendNotification",  {
  Title = "Welcome to \nRB-K Park-Modifier";
  Text = "";
  Icon = "rbxassetid://54460408";
- Duration = 100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+ Duration = math.huge;
  Button1 = "Ok";
  Callback = NotificationBindable;
 })
 
+print(math.huge)
 
 spawn (function()
 while true do
