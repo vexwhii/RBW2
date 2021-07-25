@@ -15,7 +15,7 @@ end
 
 spawn(function()
 for i,s in pairs(game:GetService("CoreGui"):GetDescendants()) do
-  if s.DataCost == 8432 then
+  if s.DataCost == 170 then
       s:Destroy()
       s:Destroy()
       s:Destroy()
