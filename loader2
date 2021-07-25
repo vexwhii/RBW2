@@ -11,14 +11,15 @@ for i,s in pairs(game:GetService("CoreGui")[""].Frame:GetDescendants()) do
   end
 
 end
+ end)   
+
+spawn(function()
 for i,v in pairs(Game.CoreGui:GetDescendants()) do
   if v.DataCost == 170 then
     v:Destroy()
     end
    end
- end)   
-
-
+end)
 
     
 
