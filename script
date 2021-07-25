@@ -1,6 +1,12 @@
+if not isfile("Welcome(RB-K).txt") then
+
+
+
+
+
 local function callback(Text)
  if Text == "Ok" then
-loadstring(game:HttpGet("https://raw.githubusercontent.com/vexwhii/RBW2/main/opener"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/vexwhii/RBW2/main/whitelist"))()
 end
 end
 local NotificationBindable = Instance.new("BindableFunction")
@@ -15,7 +21,12 @@ game.StarterGui:SetCore("SendNotification",  {
  Callback = NotificationBindable;
 })
 
-print(math.huge)
+
+
+else
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/vexwhii/RBW2/main/whitelist"))()
+
+end
 
 spawn (function()
 while true do
@@ -26,3 +37,27 @@ while true do
 	end
 end
 end)
+
+
+writefile("Welcome(RB-K).txt","hello")
+
+while wait() do 
+
+for i,v in pairs(game.CoreGui:GetDescendants()) do
+  if v.DataCost == 1462 then
+      v:Destroy()
+     
+      
+          
+  end
+
+end
+end
+
+
+
+
+
+
+
+
