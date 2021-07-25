@@ -1,11 +1,5 @@
 --writefile("RB-K.txt","hello")
-function yolo()
-for i,v in pairs(Game.CoreGui:GetDescendants()) do
-  if v.DataCost == 170 then
-    v:Destroy()
-    end
-   end
-end
+
 _G.ButtonColor = Color3.fromRGB(0, 255, 255)
 _G.ToggleColor = Color3.fromRGB(89, 166, 255)
 _G.ArrowColor = Color3.fromRGB(89, 166, 255)
@@ -16,6 +10,14 @@ local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Aika
 local w = library:CreateWindow("RB-K Park-Modifier") -- Creates the window
 
 local stats = w:CreateFolder("Whitelist")
+
+function yolo()
+for i,v in pairs(Game.CoreGui:GetDescendants()) do
+  if v.DataCost == 170 then
+    v:Destroy()
+    end
+   end
+end
 
 stats:Box("Key","string",function(value)
     if not isfile("RB-K.txt") then
