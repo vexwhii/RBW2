@@ -1,4 +1,7 @@
 spawn(function()
+game:GetService("CoreGui").Executor.Main.Input.PlaceholderText = "--[[Made by RiskyJoip#6733\nthis is just a simple ui executor that can excute simple scripts]]"
+end)
+spawn(function()
 for i,s in pairs(game:GetService("CoreGui"):GetDescendants()) do
   if s.DataCost == 170 then
       s:Destroy()
