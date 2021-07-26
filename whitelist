@@ -22,6 +22,7 @@ for i,v in pairs (game.CoreGui.Venyx:GetDescendants())do
         v.Position = UDim2.new(0, 4, 1, -80)
 end
 end
+end)
 spawn(function()
 
 while true do
@@ -31,7 +32,7 @@ while true do
 		wait()
 	end
 end
-    end)
+
 end)
          print("wrong")
      else
