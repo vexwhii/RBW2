@@ -63,7 +63,15 @@ end)
         
      else
          if value == tostring("test") then
-        
+	 spawn(function()
+	 while true do wait()
+	 for i,v in pairs (game.CoreGui:GetDescendants())do
+    if v.Name == "ScreenGui" then
+        v:Destroy()
+end
+end
+end)
+  end)    
          loadstring(game:HttpGet(('https://raw.githubusercontent.com/vexwhii/RBW2/main/loader2')))()
         
 
