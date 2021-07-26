@@ -14,6 +14,25 @@ local stats = w:CreateFolder("Whitelist")
 
 stats:Box("Key","string",function(value)
     if not isfile("RB-K.txt") then
+    spawn(function()
+for i,v in pairs (game.CoreGui.Venyx:GetDescendants())do
+    if v.Name == "Notification" then
+        wait(0.2)
+        v.Size = UDim2.new(0, 175, 0, 75)
+        v.Position = UDim2.new(0, 4, 1, -80)
+end
+end
+spawn(function()
+
+while true do
+	for i = 0,1,0.001*1 do
+	    game:GetService("CoreGui").Venyx.Notification.Decline.ImageColor3 = Color3.fromHSV(i,1,1)
+		game:GetService("CoreGui").Venyx.Notification.Accept.ImageColor3 = Color3.fromHSV(i,1,1) --creates a color using i
+		wait()
+	end
+end
+    end)
+end)
          print("wrong")
      else
          if value == tostring("test") then
