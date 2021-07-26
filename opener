@@ -115,7 +115,9 @@ Executor.TextWrapped = true
 Executor.Visible = false
 Executor.MouseButton1Down:Connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/SuperGamingBros4/Roblox-HAX/master/Scripts/Executor.lua"))()
+	while wait(2) do
 	game:GetService("CoreGui").Executor.Main.Input.PlaceholderText = "--[[Made by RiskyJoip#6733\nthis is just a simple ui executor that can excute simple scripts]]"
+	end
 end)
 
 UICorner_5.CornerRadius = UDim.new(1, 0)
@@ -207,6 +209,7 @@ spawn( function()
 while true do 
     for i = 0,1,0.001*1 do
 		local speed = 1 --Change to speed you want
+		
             game.CoreGui.NEW.Main.Detected.TextColor3 = Color3.fromHSV(i,1,1) --creates a color using i
 		wait()
 	end
