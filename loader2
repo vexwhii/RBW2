@@ -11,9 +11,23 @@ for i,s in pairs(game:GetService("CoreGui"):GetDescendants()) do
 
 end
 end
+function xdd()
+for i,s in pairs(game:GetService("CoreGui"):GetDescendants()) do
+  if s.Name == "ScreenGui" then
+      s:Destroy()
+      s:Destroy()
+      s:Destroy()
+      s:Destroy()
+      
+          
+  end
+
+end
+end
    
 spawn(function()
 xd()
+xdd()
 appendfile("hattoriv3.xzx","\nhejrjeirtetrtetetetllo\nuitrtirtjiertert")
 
 
