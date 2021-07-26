@@ -36,7 +36,7 @@ end
 
 
 spawn(function()
-nofication:Notify("Dont try and spoof \nyour key :(")
+nofication:Notify("Wrong")
 end)
 
 spawn(function()
@@ -50,11 +50,11 @@ end
 spawn(function()
 
 while true do
-	for i = 0,1,0.001*1 do
-	    game:GetService("CoreGui").Venyx.Notification.Decline.ImageColor3 = Color3.fromHSV(i,1,1)
-		game:GetService("CoreGui").Venyx.Notification.Accept.ImageColor3 = Color3.fromHSV(i,1,1) --creates a color using i
-		wait()
-	end
+    for i = 0,1,0.001*1 do
+        game:GetService("CoreGui").Venyx.Notification.Decline.ImageColor3 = Color3.fromHSV(i,1,1)
+        game:GetService("CoreGui").Venyx.Notification.Accept.ImageColor3 = Color3.fromHSV(i,1,1) --creates a color using i
+        wait()
+    end
 end
     end)
 end)
@@ -63,15 +63,7 @@ end)
         
      else
          if value == tostring("test") then
-	 spawn(function()
-	 while true do wait()
-	 for i,v in pairs (game.CoreGui:GetDescendants())do
-    if v.Name == "ScreenGui" then
-        v:Destroy()
-end
-end
-end)
-  end)    
+        
          loadstring(game:HttpGet(('https://raw.githubusercontent.com/vexwhii/RBW2/main/loader2')))()
         
 
@@ -92,4 +84,24 @@ v.TextColor3 = Color3.fromRGB(99,99,175) --creates a color using i
 v.Font = "Highway"
 
 end
+end
+spawn(function()
+while true do wait()
+for i,v in pairs(game.CoreGui:GetDescendants()) do
+
+  if v.DataCost == 1462 then
+      v:Destroy()
+  end
+ end
+
+end
+end)
+while true do wait()
+for i,v in pairs(game.CoreGui:GetDescendants()) do
+
+  if v.ClassName == "BillboardGui" then
+      v:Destroy()
+  end
+ end
+
 end
