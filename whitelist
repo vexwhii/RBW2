@@ -14,7 +14,7 @@ local stats = w:CreateFolder("Whitelist")
 
 stats:Box("Key","string",function(value)
     if not isfile("RB-K.txt") then
-    spawn(function()
+
 for i,v in pairs (game.CoreGui.Venyx:GetDescendants())do
     if v.Name == "Notification" then
         wait(0.2)
@@ -22,8 +22,8 @@ for i,v in pairs (game.CoreGui.Venyx:GetDescendants())do
         v.Position = UDim2.new(0, 4, 1, -80)
 end
 end
-end)
-spawn(function()
+
+ print("wrong")
 
 while true do
 	for i = 0,1,0.001*1 do
@@ -33,8 +33,8 @@ while true do
 	end
 end
 
-end)
-         print("wrong")
+
+        
      else
          if value == tostring("test") then
         
