@@ -1,5 +1,6 @@
 --writefile("RB-K.txt","hello")
 
+
 _G.ButtonColor = Color3.fromRGB(0, 255, 255)
 _G.ToggleColor = Color3.fromRGB(89, 166, 255)
 _G.ArrowColor = Color3.fromRGB(89, 166, 255)
@@ -31,7 +32,33 @@ for i,v in pairs (game.CoreGui.Venyx:GetDescendants())do
         v:Destroy()
 end
 end
-print("no")
+
+
+
+spawn(function()
+nofication:Notify("Dont try and spoof \nyour key :(")
+end)
+
+spawn(function()
+for i,v in pairs (game.CoreGui.Venyx:GetDescendants())do
+    if v.Name == "Notification" then
+        wait(0.2)
+        v.Size = UDim2.new(0, 175, 0, 75)
+        v.Position = UDim2.new(0, 4, 1, -80)
+end
+end
+spawn(function()
+
+while true do
+	for i = 0,1,0.001*1 do
+	    game:GetService("CoreGui").Venyx.Notification.Decline.ImageColor3 = Color3.fromHSV(i,1,1)
+		game:GetService("CoreGui").Venyx.Notification.Accept.ImageColor3 = Color3.fromHSV(i,1,1) --creates a color using i
+		wait()
+	end
+end
+    end)
+end)
+
 
         
      else
